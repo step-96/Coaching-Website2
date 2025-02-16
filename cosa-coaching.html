@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Il Bravo Coach</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+    body {
+      font-family: 'Lato', Helvetica, sans-serif;
+    }
+	</style>
+	
+	
+	
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Il Bravo Coach</a></h1>
+
+<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								
+								<li class="current"><a href="cosa-coaching.html">Cosa è il coaching?</a></li>
+								<li><a href="chi-sono-small.html">Chi sono</a></li>
+								<li><a href="servizi.html">Servizi</a></li>
+								<li><a href="contattami.html">Contattami</a></li>
+								<li><a href="download.html">Download</a></li>
+							</ul>
+						</nav>
+						
+				<section id="banner" style="background: #3498db url('images/socrates.jpg') no-repeat center center; background-size: cover;">
+							<header>
+								<h3 style="color: white;">"Non posso insegnare a nessuno, posso solo aiutarli a pensare, il che è di gran lunga superiore alla condivisione della mia limitata saggezza”.</h3>
+								<p>Socrate</p>
+							</header>
+				</section>		
+						
+
+				</section>
+				
+				
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+							
+							
+							<!-- Banner -->
+						
+								<br>
+								<header>
+									<h2>Cosa è il coaching?</h2>
+								</header>
+								<p>Il coaching è un percorso di crescita personale e professionale che ti aiuta a realizzare i tuoi obiettivi ed esprimere il tuo potenziale. </br>
+								Partendo dal tuo obiettivo, attraverso un approccio guidato e personalizzato, il coach ti accompagna nell'affrontare le sfide e sviluppare le giuste strategie per raggiungere i risultati desiderati. </p>
+								
+								<section>
+									<header>
+										<h3>Perchè proprio il coaching?</h3>
+									</header>
+									<p> Nella vita, siamo circondati da persone pronte a darci consigli: la famiglia, gli amici, i colleghi, gli insegnanti, i professionisti di ogni tipo e, perchè no, i "guru" online.
+									La cosa curiosa è che, in teoria, questi consigli dovrebbero funzionare per tutti, in ogni situazione. </p>
+									<p>Dunque, ora starai leggendo questo testo da una spiaggia alle Hawaii, sorseggiando latte di cocco accanto al partner dei tuoi sogni, ammirando i tuoi addominali scolpiti e assaporando la ritrovata pace interiore. Dopo mesi di duro lavoro, sei finalmente diventato multimilionario e puoi goderti il meritato riposo... Ah, non è andata così?
+									</p>
+									<p>Il coaching segue un approccio opposto. Ascoltare e valutare il feedback degli altri è importante, ma il vero cambiamento avviene quando torni al centro della tua vita e prendi in mano il timone. Attraverso un percorso di esplorazione e consapevolezza, il coaching ti aiuta a definire i TUOI obiettivi, valori e aspirazioni, dandoti gli strumenti per affrontare le sfide e raggiungere i risultati che desideri.
+									</p>
+									<p>Più che un metodo, il coaching è una partnership. Il mio ruolo non è darti soluzioni preconfezionate, ma aiutarti ad esplorare le TUE risposte che hai già dentro di te, anche se spesso sommerse dal rumore della vita quotidiana. Attraverso l'ascolto attivo, domande mirate e nuove prospettive, potrai riscoprire e valorizzare le TUE risorse interiori.
+									</p>
+									<p>Il mio obiettivo è accompagnarti in questo percorso di crescita, aiutandoti a diventare la migliore versione di te stesso e, nel farlo, contribuire a un mondo migliore.
+
+								</section>
+								
+								
+								
+								<section>
+									<header>
+										<h3>Come faccio a sapere se ho l'obiettivo giusto per il coaching?</h3>
+									</header>
+									<p>Usa la calcolatrice qua sotto per scoprirlo!
+									
+									Inserisci un punteggio da 1 a 10 secondo i sequenti criteri:
+									
+									<ul>
+										<li>Il primo numero indica l'importanza che ha per te il tuo obiettivo (1: non mi importa per niente, 10: é tra le cose più importante in questo momento nella mia vita)
+										<li>Il secondo numero indica quanto sei soddisfatto al momento di ciò che hai raggiunto (1: non ho ancora raggiunto nulla, 10: ho ottenuto tutto quello che avrei voluto)
+										<li>Il terzo numero indica quanto immagini che sarai soddisfatto tra un mese, se continui con il tuo piano attuale (1: la mia situazione rimarrà invariata o peggiorerà, 10: sono sicuro che otterrò grandi miglioramenti senza bisogno di supporto)
+									</ul>
+									
+										<input type="number" id="num1" placeholder="Importanza">
+										<br>
+										<input type="number" id="num2" placeholder="Soddisfazione ora">
+										<br>
+										<input type="number" id="num3" placeholder="Soddisfazione tra 1 mese">
+										<br><br>
+										
+										<button onclick="calculateProduct()">Calcola</button>
+
+										<div id="result"></div>
+										<div id="comment"></div>
+
+										<script>
+											function calculateProduct() {
+												var num1 = document.getElementById("num1").value;
+												var num2 = document.getElementById("num2").value;
+												var num3 = document.getElementById("num3").value;
+												var product = num1 * num1 * (10 - num2) * (10 - num3);
+
+												document.getElementById("result").innerText = "Risultato: " + product;
+																		
+											
+											
+											 var comment = "";
+											if (product < 600) {
+												comment = "Sembra che l'obiettivo scelto non sia troppo importante per te o sei già soddisfatto dei risoltati ottenuti 📉";
+											} else if (product >= 600 && product <= 2400) {
+												comment = "Non male. Dai un boost ai tuoi progressi con il coaching👍";
+											} else {
+												comment = "Wow, cosa aspetti? Inizia subito! 🚀";
+											}
+
+											document.getElementById("comment").innerText = comment;
+											}
+										</script>
+										
+										
+										
+										
+	
+	
+								</section>
+								
+							</article>
+
+					</div>
+				</section>
+				
+				
+				
+				<!-- Footer -->
+				<section id="footer">
+					
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				
+
+			
+				
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
